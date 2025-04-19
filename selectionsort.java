@@ -1,3 +1,7 @@
+/*Selection sort - select an element and puts it at its
+correct position.
+*/
+
 public class Selectionsort {
     static void selectionSort(int[] arr){
         int n = arr.length;
