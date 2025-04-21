@@ -27,10 +27,15 @@ public class Mergesort {
             arr[k++] = right[j++];
     }
     static void mergeSort(int[] arr, int l, int r){
+        //This will sort array from l to r
+        //base case
         if(l >= r) return;
         int mid = (l+r)/2;
+        //sub problem
         mergeSort(arr, l, mid);
         mergeSort(arr, mid+1, r);
+        //merge function sort the already sorted arrays
+        //self work
         merge(arr, l, mid, r);
     }
 
